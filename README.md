@@ -30,13 +30,3 @@ The python console script can be run with
 Tests can be run with
 
 `make tests`
-
-
-# Notes: Changes for a High Volume Production Environment
-
-I went for Python with this tool, but given time and resources
-in a high volume production environment I would opt for a more performant language for an implementation - I would naturally go towards
-Java for this.
-In this tool I make a many single calls to the api and reasoned the time taken to fetch all resources and reason about the data
-was in general a slower process than the fewer calls I would make in most of the "almost complete" searches.
-I would probably use mongo for a data storage and look into using solr search for opimising search performance.
